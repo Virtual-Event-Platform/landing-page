@@ -44,12 +44,12 @@ const Navbar = (props: any) => {
                                 mr: 2,
                                 display: { xs: 'none', md: 'flex' },
                                 fontWeight: 700,
-                                letterSpacing: '.1rem',
+                                letterSpacing: '0.3rem',
                                 color: 'inherit',
                                 textDecoration: 'none',
                             }}
                         >
-                            V E P
+                            VEP
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center" }} >
                             {sections.map((page) => (

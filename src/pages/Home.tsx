@@ -32,18 +32,18 @@ const Home = (props: any) => {
 						<Container maxWidth={"lg"}>
 							<Stack width={"100%"} justifyContent={"center"} alignItems={"center"} height={"100vh"}>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
-									<Typography className={"text-bold"} sx={{ fontSize: "10rem", textAlign: "center", lineHeight: 1 }}>
+									<Typography className={"text-bold"} sx={{ fontSize: {md: "10rem", sm: "8rem", xs: "6rem"}, textAlign: "center", lineHeight: 1 }}>
 										<div id="text-fg">Virtual Event</div>
 									</Typography>
 									<Typed
-										style={{ color: "white", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "center", marginTop: 17, marginBottom: 17, width: "75%" }}
+										style={{ color: "white", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "center", width: "75%" }}
 										strings={typedText}
-										typeSpeed={5}
+										typeSpeed={10}
 										cursorChar=''
 									/>
 									<Button className='radius-zero hover-dark' variant="contained"
 										sx={{
-											my: 2,
+											my: 3,
 											color: 'white',
 											textTransform: 'none',
 											fontFamily: "product",
@@ -65,12 +65,12 @@ const Home = (props: any) => {
 				</BackdropFilter>
 			</Container>
 			<section id="team">
-				<Container maxWidth={false} style={{ width: "100%", margin: "5% 0% 0% 0%" }} >
+				<Container maxWidth={false} style={{ width: "100%", margin: "5% 0% 5% 0%" }} >
 					<Stack direction={"column"} justifyContent={"center"} alignItems={"center"}>
 						<Typography className={"text-bold text-dark"} variant='h2' sx={{ textAlign: "center", lineHeight: 1 }}>
 							Qui sommes nous ?
 						</Typography>
-						<Typography className={"text-dark"} variant='h6' mt={2.5} sx={{ textAlign: "center", lineHeight: 1.5, width: "50%" }}>
+						<Typography className={"text-dark"} mt={2.5} sx={{ fontSize: 18, textAlign: "center", lineHeight: 1.5, width: "50%" }}>
 							{typedText}
 						</Typography>
 					</Stack>
@@ -79,14 +79,14 @@ const Home = (props: any) => {
 					</Stack>
 					<Grid container rowSpacing={3} sx={{ justifyContent: "center", alignItems: "center" }}>
 						{Array.from({ length: 5 }, (_) => (
-							<Grid item md={4} xs={6}>
+							<Grid item md={4} sm={6} xs={12}>
 								<Stack justifyContent={"center"} alignItems={"center"}>
 									<Stack direction={"row"} alignItems={"center"} spacing={0.8}>
 										<img src={team} alt="Student" width="80"
 											className={"rounded-circle img-thumbnail shadow-sm"}
 										/>
 										<Stack spacing={1.5}>
-											<Typography className={"text-dark"} variant='h6' sx={{ lineHeight: 0.7 }}>
+											<Typography className={"text-dark"} sx={{ lineHeight: 1.3, fontSize: 18 }}>
 												Landry Manankoraisina
 											</Typography>
 											<Typography variant='body2' sx={{ lineHeight: 0.7, color: colors.purple }}>
