@@ -1,1 +1,1 @@
-export const typedText = ["Offrez à votre public une expérience immersive inégalée en quelques clics.</br></br>Virtual Platform Event - la plateforme 3D interactive qui ajoute une dimension supplémentaire à votre événement!"];
+export const typedText = ["La plateforme 3D interactive qui ajoute une dimension supplémentaire à vos événements !"];

@@ -49,7 +49,7 @@ const Navbar = (props: any) => {
                                 textDecoration: 'none',
                             }}
                         >
-                            Landing
+                            V E P
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center" }} >
                             {sections.map((page) => (
@@ -89,7 +89,7 @@ const Navbar = (props: any) => {
                                 textDecoration: 'none',
                             }}
                         >
-                            Landing
+                            V E P
                         </Typography>
                         <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton

@@ -36,7 +36,7 @@ const Home = (props: any) => {
 										<div id="text-fg">Virtual Event</div>
 									</Typography>
 									<Typed
-										style={{ color: "white", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "center", marginTop: 17, marginBottom: 17, width: 500 }}
+										style={{ color: "white", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "center", marginTop: 17, marginBottom: 17, width: "75%" }}
 										strings={typedText}
 										typeSpeed={5}
 										cursorChar=''
