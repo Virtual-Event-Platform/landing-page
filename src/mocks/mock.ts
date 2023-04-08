@@ -1,0 +1,1 @@
+export const typedText = ["A landing page is the first page of a website. Without a landing page, we can’t think about a website."];

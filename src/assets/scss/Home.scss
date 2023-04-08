@@ -1,0 +1,112 @@
+/* Start from Home.scss */
+
+#hero {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-origin: center;
+	background-attachment: fixed;
+	background-size: cover;
+	top: 0;
+}
+
+.nav-item.active {
+	text-align: center;
+	padding-bottom: 5px;
+	background:
+		/* gradient can be an image */
+		linear-gradient(to right,
+			white 0%,
+			white 30%,
+			black 47%,
+			black 100%) left bottom no-repeat;
+	background-size: 100% 1px;
+	/* if linear-gradient, we need to resize it */
+	height: 40px;
+}
+
+.text-white {
+	color: white !important;
+}
+
+.text-dark{
+	color: #222 !important;
+}
+
+.text-bold {
+	font-weight: bold !important;
+}
+
+.radius-zero {
+	border-radius: 0px !important;
+}
+
+.border-white {
+	border: 1px solid white !important;
+}
+
+.hover-dark:hover {
+	background-color: #00000070 !important;
+}
+
+.float-icon:hover {
+	color: black !important;
+}
+
+.shimmer-icon {
+	color: #ffffff7c;
+	animation: shimmer 1s infinite alternate both;
+}
+
+@keyframes shimmer {
+	from {
+		color: white;
+	}
+
+	to {
+		color: #ffffff7c;
+	}
+}
+
+
+#text-fg {
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: url('../images/back.gif');
+}
+
+
+.social-icon {
+    transition: 1s;
+}
+
+.social-icon:hover {
+    transition: 1s;
+    transform: scale(1.2);
+
+}
+
+.sc-linkedin:hover{
+    background-color: #0075B5 !important;
+}
+
+.sc-facebook:hover{
+    background-color: #1778F2 !important;
+}
+
+.shadow-sm {
+	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+.rounded-circle {
+	border-radius: 50% !important;
+	border: 4px solid #65378073;
+}
+
+.img-thumbnail {
+	padding: 0.25rem;
+	background-color: #fff;
+	border-radius: 0.25rem;
+	max-width: 100%;
+	height: auto;
+}
