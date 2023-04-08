@@ -74,7 +74,7 @@ const Home = (props: any) => {
 							{typedText}
 						</Typography>
 					</Stack>
-					<Stack direction={"column"} justifyContent={"center"}>
+					<Stack direction={"column"} justifyContent={"center"} alignItems={"center"}>
 						<Divider sx={{ borderBottom: `1px solid ${colors.beige}`, marginY: 4, width: "70%" }} />
 					</Stack>
 					<Grid container rowSpacing={3} sx={{ justifyContent: "center", alignItems: "center" }}>
