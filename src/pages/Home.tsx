@@ -33,10 +33,10 @@ const Home = (props: any) => {
 							<Stack width={"100%"} justifyContent={"center"} alignItems={"center"} height={"100vh"}>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
 									<Typography className={"text-bold"} sx={{ fontSize: "10rem", textAlign: "center", lineHeight: 1 }}>
-										<div id="text-fg">Landing page</div>
+										<div id="text-fg">Landing</div>
 									</Typography>
 									<Typed
-										style={{ color: "white", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "center", marginTop: 20, width: 500 }}
+										style={{ color: "white", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "center", marginTop: 17, marginBottom: 17, width: 500 }}
 										strings={typedText}
 										typeSpeed={5}
 										cursorChar=''
