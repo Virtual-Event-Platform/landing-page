@@ -34,7 +34,7 @@ const Home = (props: any) => {
 							<Stack width={"100%"} justifyContent={"center"} alignItems={"center"} height={"100vh"}>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
 									<Typography className={"text-bold"} sx={{ fontSize: { md: "10rem", sm: "8rem", xs: "6rem" }, textAlign: "center", lineHeight: 1 }}>
-										<div className={"text-fg"}>Nomapps</div>
+										<div className={"text-fg"}>Z a v o k a</div>
 									</Typography>
 									<Typed
 										className={"text-white"}
@@ -128,7 +128,7 @@ const Home = (props: any) => {
 			<section id="services" style={{ backgroundColor: colors.dark, display: "flex", justifyContent: "center", margin: "5% 0% 5% 0%", }}>
 				<Container maxWidth={"xl"} sx={{ padding: "5% 0% 6% 0%" }}>
 					<Typography className={"text-bold text-white"} variant='h2' sx={{ textAlign: "center", lineHeight: 1, letterSpacing: 1.2 }}>
-						Pourquoi l'utiliser ?
+						Qu'offrons-nous ?
 					</Typography>
 					<Grid container mt={7}>
 						<Grid item md={4}>
@@ -168,7 +168,7 @@ const Home = (props: any) => {
 						<Typography className={"text-bold text-dark"} variant='h2' sx={{ textAlign: "center", lineHeight: 1 }}>
 							Qui sommes nous ?
 						</Typography>
-						<Typography className={"text-dark"} mt={2.5} sx={{ fontSize: 18, textAlign: "center", lineHeight: 1.5, width: "50%" }}>
+						<Typography className={"text-dark"} mt={2.5} sx={{ fontSize: 18, textAlign: "center", lineHeight: 1.5, width: "80%" }}>
 							{teamText}
 						</Typography>
 					</Stack>
