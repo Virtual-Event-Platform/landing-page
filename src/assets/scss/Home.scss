@@ -45,12 +45,12 @@
 }
 
 .border-dark {
-	border: 1px solid #2b2b27 !important;
+	border: 1px solid #2b2b2777 !important;
 }
 
 .border-dark:hover {
 	color: #fff !important;
-	background-color: #2b2b27 !important ;
+	background-color: #2b2b27 !important;
 }
 
 .hover-dark:hover {
@@ -89,7 +89,7 @@
 	font-family: "Josefin Sans" !important;
 }
 
-.text-white > span {
+.text-white>span {
 	font-family: "Josefin Sans" !important;
 }
 
@@ -126,4 +126,15 @@
 	border-radius: 0.25rem;
 	max-width: 100%;
 	height: auto;
+}
+
+.card-service {
+	transition: 1s;
+	cursor: pointer;
+}
+
+.card-service:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: rotate(0deg);
+	transition: 1s;
 }

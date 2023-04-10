@@ -139,18 +139,20 @@ const Navbar = (props: any) => {
 
                         {/* Last item, nous contacter */}
                         <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-                            <Button className={"border-white radius-zero"} variant="outlined"
-                                sx={{
-                                    color: 'white',
-                                    textTransform: 'none',
-                                    fontFamily: "product",
-                                    fontSize: "16px",
-                                    width: "170px",
-                                }}
-                                disableElevation
-                            >
-                                Nous contacter
-                            </Button>
+                            <Link to="footer" smooth spy duration={400} offset={-90} style={{ textDecoration: "none" }}>
+                                <Button className={"border-white radius-zero"} variant="outlined"
+                                    sx={{
+                                        color: 'white',
+                                        textTransform: 'none',
+                                        fontFamily: "product",
+                                        fontSize: "16px",
+                                        width: "170px",
+                                    }}
+                                    disableElevation
+                                >
+                                    Nous contacter
+                                </Button>
+                            </Link>
                         </Box>
 
                     </Toolbar>

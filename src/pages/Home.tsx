@@ -2,14 +2,13 @@ import '../assets/scss/Home.scss';
 import Navbar from '../components/Navbar';
 import { Button, Fab, Grid, Stack, Typography, Divider, Box } from '@mui/material';
 import { Container } from '@mui/system';
-import { BsChevronDoubleDown } from "react-icons/bs";
-import { AiOutlinePushpin } from "react-icons/ai";
+import { BsChevronDoubleDown, BsPinAngleFill } from "react-icons/bs";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { Link } from 'react-scroll';
 import { ScrollToTop } from '../components/Scrolls';
 import colors from "../colors/colors"
 import Typed from "react-typed";
-import { typedText, teamText, aboutText } from '../mocks/mock';
+import { typedText, teamText, aboutText, serviceText } from '../mocks/mock';
 import BackdropFilter from "react-backdrop-filter";
 import hero from "../assets/images/hero.jpg";
 import team from "../assets/images/team.jpg";
@@ -75,48 +74,89 @@ const Home = (props: any) => {
 			</Container>
 			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "5% 0% 5% 0%", }}>
 				<Container maxWidth={"lg"}>
-					<Typography className={"text-bold text-dark"} variant='h4' sx={{ lineHeight: 1, letterSpacing: 1.2 }}>
+					<Typography className={"text-bold text-dark"} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, lineHeight: 1, letterSpacing: 1.2 }}>
 						Nous connaître ...
 					</Typography>
-					<Grid container mt={3} alignItems={"center"} bgcolor={colors.beigeSecondary}>
-						<Grid item md={5}>
-							<Stack spacing={2}>
-								<Box component="img" src={hero} alt="Food" sx={{ width: 400, maxWidth: { xs: 300, md: 400 } }} />
+					<Grid container mt={3} alignItems={"center"} py={{ xs: 4, md: 0 }} bgcolor={colors.beigeSecondary}>
+						<Grid item md={5} xs={12}>
+							<Stack direction="row" width={"100%"} justifyContent={{ xs: "center", md: "start" }}>
+								<Box component="img" src={hero} alt="Hero" sx={{ width: "90%", maxWidth: { xs: 350, md: "90%" } }} />
 							</Stack>
 						</Grid>
-						<Grid item md={7}>
+						<Grid item md={7} xs={12}>
 							<Stack spacing={3} px={2}>
-								<Typography className={"text-dark"} sx={{ fontSize: 17, lineHeight: 1.5 }}>
+								<Typography className={"text-dark"} mt={{ xs: 3, md: "unset" }} sx={{ textAlign: { xs: "center", md: "left" }, fontSize: 17, lineHeight: 1.5 }}>
 									{aboutText}
 								</Typography>
-								<Stack direction={"row"} spacing={1.2}>
-									<Button className='radius-zero hover-beige' variant="contained"
-										sx={{
-											color: 'white',
-											textTransform: 'none',
-											fontFamily: "product",
-											fontSize: "16px",
-											width: "150px",
-											backgroundColor: `#fc9546`,
-										}}
-										disableElevation
-									>
-										Nos services
-									</Button>
-									<Button className={"border-dark radius-zero"} variant="outlined"
-										sx={{
-											color: "#2b2b27",
-											textTransform: 'none',
-											fontFamily: "product",
-											fontSize: "16px",
-											width: "170px",
-										}}
-										disableElevation
-									>
-										Nous contacter
-									</Button>
+								<Stack direction={"row"} justifyContent={{ xs: "center", md: "start" }} spacing={1.2}>
+									<Link to="services" smooth spy duration={400} offset={-90} style={{ textDecoration: "none" }}>
+										<Button className='radius-zero hover-beige' variant="contained"
+											sx={{
+												color: 'white',
+												textTransform: 'none',
+												fontFamily: "product",
+												fontSize: "16px",
+												width: "150px",
+												backgroundColor: `#fc9546`,
+											}}
+											disableElevation
+										>
+											Nos services
+										</Button>
+									</Link>
+									<Link to="footer" smooth spy duration={400} offset={-90} style={{ textDecoration: "none" }}>
+										<Button className={"border-dark radius-zero"} variant="outlined"
+											sx={{
+												color: "#2b2b27e1",
+												textTransform: 'none',
+												fontFamily: "product",
+												fontSize: "16px",
+												width: "170px",
+											}}
+											disableElevation
+										>
+											Nous contacter
+										</Button>
+									</Link>
 								</Stack>
 							</Stack>
+						</Grid>
+					</Grid>
+				</Container>
+			</section>
+			<section id="services" style={{ backgroundColor: colors.dark, display: "flex", justifyContent: "center", margin: "5% 0% 5% 0%", }}>
+				<Container maxWidth={"xl"} sx={{ padding: "5% 0% 6% 0%" }}>
+					<Typography className={"text-bold text-white"} variant='h2' sx={{ textAlign: "center", lineHeight: 1, letterSpacing: 1.2 }}>
+						Qu'offrons nous ?
+					</Typography>
+					<Grid container mt={7}>
+						<Grid item md={4}>
+							<Stack spacing={3} px={2}>
+								<Typography className={"text-white"} sx={{ fontSize: 17, lineHeight: 1.5 }}>
+									{serviceText}
+								</Typography>
+							</Stack>
+						</Grid>
+						<Grid item md={8}>
+							<Grid container columnSpacing={{ xs: 0, sm: 3, md: 3 }} rowSpacing={{ xs: 3, md: 0 }} mt={{ xs: 3, md: 0 }}>
+								{Array.from({ length: 3 }, (_) => (
+									<Grid item md={4} sm={6} xs={12} px={{ xs: 2, sm: 0, md: 0 }}>
+										<Stack className={"card-service"} p={3} spacing={1} justifyContent={"center"} alignItems={"center"} bgcolor={colors.darkSecondary}
+											sx={{ transform: { md: "rotate(8deg)", xs: "rotate(0deg)" } }}
+										>
+											<Stack direction={"row"} justifyContent="end" width={"100%"}>
+												<BsPinAngleFill style={{ fontSize: 20, color: colors.blue }} />
+											</Stack>
+											<Typography className={"text-bold"} variant='h5' sx={{ textAlign: "center", lineHeight: 1, color: colors.beige, letterSpacing: 3 }}>
+												Service
+											</Typography>
+											<Typography className={"text-white"} sx={{ textAlign: "center", fontSize: 17, lineHeight: 1.5 }}>
+												{serviceText}
+											</Typography>
+										</Stack>
+									</Grid>
+								))}
+							</Grid>
 						</Grid>
 					</Grid>
 				</Container>

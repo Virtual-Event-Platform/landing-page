@@ -1,3 +1,4 @@
 export const typedText = ["La plateforme 3D interactive qui ajoute une dimension supplémentaire à vos événements !"];
 export const teamText = "Nous sommes une groupe de personnes réunies pour accomplir ensemble un travail commun."
-export const aboutText= "La plateforme 3D interactive qui ajoute une dimension supplémentaire à vos événements. Nous sommes une groupe de personnes réunies pour accomplir ensemble un travail commun. La plateforme 3D interactive qui ajoute une dimension supplémentaire à vos événements. "
+export const aboutText = "La plateforme 3D interactive qui ajoute une dimension supplémentaire à vos événements. Nous sommes une groupe de personnes réunies pour accomplir ensemble un travail commun. La plateforme 3D interactive qui ajoute une dimension supplémentaire à vos événements."
+export const serviceText = "La plateforme 3D interactive qui ajoute une dimension supplémentaire à vos événements. Nous sommes une groupe de personnes réunies pour accomplir ensemble un travail commun."

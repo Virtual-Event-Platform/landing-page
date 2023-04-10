@@ -11,7 +11,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 const Footer = () => {
     return (
-        <Container maxWidth={false}
+        <Container maxWidth={false} id={"footer"}
             style={{
                 width: "100%",
                 background: `url(${hero}) no-repeat center center fixed #000`,
