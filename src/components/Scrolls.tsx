@@ -28,6 +28,6 @@ export const ElevationScroll = (props: any) => {
     });
 
     return React.cloneElement(children, {
-        style: { backgroundColor: trigger ? "#120d17c7" : "transparent", boxShadow: "none", backdropFilter: trigger ? "blur(80px) sepia(40%)" : "none" }
+        style: { backgroundColor: trigger ? "#2b2b27c7" : "transparent", boxShadow: "none", backdropFilter: trigger ? "blur(80px) sepia(40%)" : "none" }
     });
 };

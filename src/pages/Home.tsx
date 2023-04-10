@@ -1,14 +1,15 @@
 import '../assets/scss/Home.scss';
 import Navbar from '../components/Navbar';
-import { Button, Fab, Grid, Stack, Typography, Divider } from '@mui/material';
+import { Button, Fab, Grid, Stack, Typography, Divider, Box } from '@mui/material';
 import { Container } from '@mui/system';
 import { BsChevronDoubleDown } from "react-icons/bs";
+import { AiOutlinePushpin } from "react-icons/ai";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { Link } from 'react-scroll';
 import { ScrollToTop } from '../components/Scrolls';
 import colors from "../colors/colors"
 import Typed from "react-typed";
-import { typedText, teamText } from '../mocks/mock';
+import { typedText, teamText, aboutText } from '../mocks/mock';
 import BackdropFilter from "react-backdrop-filter";
 import hero from "../assets/images/hero.jpg";
 import team from "../assets/images/team.jpg";
@@ -50,7 +51,7 @@ const Home = (props: any) => {
 											fontFamily: "product",
 											fontSize: "16px",
 											width: "150px",
-											backgroundColor: `${colors.purpleSecondary}`,
+											backgroundColor: `${colors.beige}`,
 										}}
 										disableElevation
 									>
@@ -58,13 +59,68 @@ const Home = (props: any) => {
 									</Button>
 								</Stack>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
-									<BsChevronDoubleDown className={"shimmer-icon"} style={{ color: "#fff", fontSize: 18 }} />
+									<Link
+										smooth spy
+										duration={400}
+										offset={-90}
+										style={{ textDecoration: "none" }}
+										to="apropos">
+										<BsChevronDoubleDown className={"shimmer-icon"} style={{ color: "#fff", fontSize: 18, cursor: "pointer" }} />
+									</Link>
 								</Stack>
 							</Stack>
 						</Container>
 					</Stack>
 				</BackdropFilter>
 			</Container>
+			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "5% 0% 5% 0%", }}>
+				<Container maxWidth={"lg"}>
+					<Typography className={"text-bold text-dark"} variant='h4' sx={{ lineHeight: 1, letterSpacing: 1.2 }}>
+						Nous connaître ...
+					</Typography>
+					<Grid container mt={3} alignItems={"center"} bgcolor={colors.beigeSecondary}>
+						<Grid item md={5}>
+							<Stack spacing={2}>
+								<Box component="img" src={hero} alt="Food" sx={{ width: 400, maxWidth: { xs: 300, md: 400 } }} />
+							</Stack>
+						</Grid>
+						<Grid item md={7}>
+							<Stack spacing={3} px={2}>
+								<Typography className={"text-dark"} sx={{ fontSize: 17, lineHeight: 1.5 }}>
+									{aboutText}
+								</Typography>
+								<Stack direction={"row"} spacing={1.2}>
+									<Button className='radius-zero hover-beige' variant="contained"
+										sx={{
+											color: 'white',
+											textTransform: 'none',
+											fontFamily: "product",
+											fontSize: "16px",
+											width: "150px",
+											backgroundColor: `#fc9546`,
+										}}
+										disableElevation
+									>
+										Nos services
+									</Button>
+									<Button className={"border-dark radius-zero"} variant="outlined"
+										sx={{
+											color: "#2b2b27",
+											textTransform: 'none',
+											fontFamily: "product",
+											fontSize: "16px",
+											width: "170px",
+										}}
+										disableElevation
+									>
+										Nous contacter
+									</Button>
+								</Stack>
+							</Stack>
+						</Grid>
+					</Grid>
+				</Container>
+			</section>
 			<section id="team" style={{ display: "flex", justifyContent: "center", margin: "5% 0% 5% 0%", }}>
 				<Container maxWidth={"lg"}>
 					<Stack direction={"column"} justifyContent={"center"} alignItems={"center"}>
@@ -108,7 +164,7 @@ const Home = (props: any) => {
 					duration={400}
 					style={{ textDecoration: "none" }}
 					to="hero">
-					<Fab sx={{ backgroundColor: `${colors.purpleSecondary}` }} size="small" aria-label="scroll back to top">
+					<Fab sx={{ backgroundColor: `${colors.beige}` }} size="small" aria-label="scroll back to top">
 						<KeyboardArrowUpIcon className={"float-icon"} sx={{ color: "#fff" }} />
 					</Fab>
 				</Link>
