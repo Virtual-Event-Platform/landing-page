@@ -12,6 +12,7 @@ import { typedText, teamText, aboutText, serviceText } from '../mocks/mock';
 import BackdropFilter from "react-backdrop-filter";
 import hero from "../assets/images/hero.jpg";
 import team from "../assets/images/team.jpg";
+import about from "../assets/images/about.jpg";
 import Footer from '../components/Footer';
 
 
@@ -33,7 +34,7 @@ const Home = (props: any) => {
 							<Stack width={"100%"} justifyContent={"center"} alignItems={"center"} height={"100vh"}>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
 									<Typography className={"text-bold"} sx={{ fontSize: { md: "10rem", sm: "8rem", xs: "6rem" }, textAlign: "center", lineHeight: 1 }}>
-										<div className={"text-fg"}>Nomappa</div>
+										<div className={"text-fg"}>Nomapps</div>
 									</Typography>
 									<Typed
 										className={"text-white"}
@@ -77,10 +78,10 @@ const Home = (props: any) => {
 					<Typography className={"text-bold text-dark"} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, lineHeight: 1, letterSpacing: 1.2 }}>
 						Nous connaître ...
 					</Typography>
-					<Grid container mt={3} alignItems={"center"} py={{ xs: 4, md: 0 }} bgcolor={colors.beigeSecondary}>
+					<Grid container mt={2.5} alignItems={"center"} py={{ xs: 4, md: 0 }} bgcolor={colors.beigeSecondary}>
 						<Grid item md={5} xs={12}>
 							<Stack direction="row" width={"100%"} justifyContent={{ xs: "center", md: "start" }}>
-								<Box component="img" src={hero} alt="Hero" sx={{ width: "90%", maxWidth: { xs: 350, md: "90%" } }} />
+								<Box component="img" src={about} alt="Hero" sx={{ width: "90%", maxWidth: { xs: 350, md: "85%" } }} />
 							</Stack>
 						</Grid>
 						<Grid item md={7} xs={12}>
