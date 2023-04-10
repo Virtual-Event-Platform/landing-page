@@ -13,6 +13,10 @@ export const aboutText = "Découvrez une nouvelle dimension pour vos événement
 
 export const serviceText = "VEP offre une plateforme 3D interactive qui vous permet de personnaliser vos différents stands d'exposition, diffuser des vidéos simultanément dans une salle de conférence virtuelle et afficher les logos de vos partenaires à différents niveaux de visibilité pour créer un événement virtuel unique et engageant.";
 
+export const pricingText = aboutText;
+
+export const cardPricingText = "Nous sommes une groupe de personnes réunies";
+
 export const services = [
     {
         title: "Stands personnalisables",
@@ -36,7 +40,7 @@ export const teams = [
         photo: raja
     },
     {
-        nom: "Landry Manankoraisina",
+        nom: "Landry",
         description: "Développeur FullStack",
         photo: landry
     },
@@ -51,7 +55,7 @@ export const teams = [
         photo: damia
     },
     {
-        nom: "Gaetan Jonathan",
+        nom: "Gaetan",
         description: "Développeur FullStack",
         photo: gaetan
     }

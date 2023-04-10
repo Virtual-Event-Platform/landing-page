@@ -32,6 +32,10 @@
 	color: #2b2b27 !important;
 }
 
+.text-pink {
+	color: #8b1538be !important;
+}
+
 .text-bold {
 	font-weight: bold !important;
 }
@@ -59,6 +63,11 @@
 
 .hover-beige:hover {
 	background-color: #fc9546 !important;
+}
+
+.hover-plan:hover {
+	color: #fc9546 !important;
+	background-color: white !important;
 }
 
 .float-icon:hover {

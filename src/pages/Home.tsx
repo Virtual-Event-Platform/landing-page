@@ -4,14 +4,14 @@ import { Button, Fab, Grid, Stack, Typography, Divider, Box } from '@mui/materia
 import { Container } from '@mui/system';
 import { BsChevronDoubleDown, BsPinAngleFill } from "react-icons/bs";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { Link } from 'react-scroll';
 import { ScrollToTop } from '../components/Scrolls';
 import colors from "../colors/colors"
 import Typed from "react-typed";
-import { typedText, teamText, aboutText, serviceText, services, teams } from '../mocks/mock';
+import { typedText, teamText, aboutText, serviceText, services, teams, pricingText, cardPricingText } from '../mocks/mock';
 import BackdropFilter from "react-backdrop-filter";
 import hero from "../assets/images/hero.jpg";
-import team from "../assets/images/team.jpg";
 import about from "../assets/images/about.jpg";
 import Footer from '../components/Footer';
 
@@ -73,7 +73,7 @@ const Home = (props: any) => {
 					</Stack>
 				</BackdropFilter>
 			</Container>
-			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "5% 0% 5% 0%", }}>
+			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
 				<Container maxWidth={"lg"}>
 					<Typography className={"text-bold text-dark"} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, lineHeight: 1, letterSpacing: 1.2 }}>
 						La plateforme virtuelle 3D
@@ -125,7 +125,7 @@ const Home = (props: any) => {
 					</Grid>
 				</Container>
 			</section>
-			<section id="services" style={{ backgroundColor: colors.dark, display: "flex", justifyContent: "center", margin: "5% 0% 5% 0%", }}>
+			<section id="services" style={{ backgroundColor: colors.dark, display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
 				<Container maxWidth={"xl"} sx={{ padding: "5% 0% 6% 0%" }}>
 					<Typography className={"text-bold text-white"} variant='h2' sx={{ textAlign: "center", lineHeight: 1, letterSpacing: 1.2 }}>
 						Pourquoi l'utiliser ?
@@ -162,7 +162,84 @@ const Home = (props: any) => {
 					</Grid>
 				</Container>
 			</section>
-			<section id="team" style={{ display: "flex", justifyContent: "center", margin: "5% 0% 5% 0%", }}>
+			<section id="pricing" style={{ display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
+				<Container maxWidth={"lg"}>
+					<Typography className={"text-bold text-dark"} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, lineHeight: 1, letterSpacing: 1.2 }}>
+						Découvrez nos offres
+					</Typography>
+					<Typography className={"text-dark"} my={{ xs: 3, md: 2 }} sx={{ width: {md :"50%", xs: "100%"}, textAlign: { xs: "center", md: "left" }, fontSize: 17, lineHeight: 1.5 }}>
+						{pricingText}
+					</Typography>
+					<Grid container columnSpacing={3} rowSpacing={{xs: 3, md : 0}} alignItems={{md:"center", xs: "start"}} py={{ xs: 4, md: 0 }}>
+						{Array.from({ length: 3 }, (_, index) => (
+							<Grid item md={4} sm={6} xs={12}>
+								<Stack p={5} borderRadius={5} justifyContent={"center"} bgcolor={index === 1 ? "#fc9546" : "white"} sx={{ border: index === 1 ? "1px solid white" : "1px solid #2b2b2740" }}>
+									<Typography className={index === 1 ? "text-white text-bold" : "text-dark text-bold"} variant='h5' sx={{ textAlign: "center", lineHeight: 1, letterSpacing: 3 }}>
+										{index === 0 ? "Bronze" : index === 1 ? "Gold" : "Silver"}
+									</Typography>
+									<Typography my={2} className={index === 1 ? "text-white" : "text-dark"} sx={{ textAlign: "center", fontSize: 16.2, lineHeight: 1.5 }}>
+										{cardPricingText}
+									</Typography>
+									<Typography className={index === 1 ? "text-white text-bold" : "text-pink text-bold"} sx={{ textAlign: "center", fontSize: 30, lineHeight: 1.5 }}>
+										500 000 Ar
+									</Typography>
+									<Stack mt={2} direction={"row"} justifyContent={"start"}>
+										<Stack px={5} spacing={1}>
+											{Array.from({ length: index === 1 ? 5 : 3 }, (_, _index) => (
+												<Stack spacing={1} direction={"row"}>
+													<CheckCircleIcon sx={{ color: index === 1 ? "white" : "#fc9546" }} />
+													<Typography className={index === 1 ? "text-white" : "text-dark"} sx={{ textAlign: "center", fontSize: 16.2, lineHeight: 1.5 }}>
+														Bénéfice
+													</Typography>
+												</Stack>
+											))}
+										</Stack>
+									</Stack>
+									<Stack mt={3} direction={"row"} width={"100%"} justifyContent={"center"}>
+										{
+											index === 1 ? (
+												<Link to="footer" smooth spy duration={400} offset={-90} style={{ textDecoration: "none" }}>
+													<Button className={"hover-plan"} variant="contained"
+														sx={{
+															color: "#fc9546",
+															textTransform: 'none',
+															fontFamily: "product",
+															fontSize: "16px",
+															width: "140px",
+															borderRadius: 15,
+															backgroundColor : "white"
+														}}
+														disableElevation
+													>
+														Choisir
+													</Button>
+												</Link>
+											) : (
+												<Link to="footer" smooth spy duration={400} offset={-90} style={{ textDecoration: "none" }}>
+													<Button className={"border-dark"} variant="outlined"
+														sx={{
+															color: "#2b2b27e1",
+															textTransform: 'none',
+															fontFamily: "product",
+															fontSize: "16px",
+															width: "140px",
+															borderRadius: 15
+														}}
+														disableElevation
+													>
+														Choisir
+													</Button>
+												</Link>
+											)
+										}
+									</Stack>
+								</Stack>
+							</Grid>
+						))}
+					</Grid>
+				</Container>
+			</section>
+			<section id="team" style={{ display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
 				<Container maxWidth={"lg"}>
 					<Stack direction={"column"} justifyContent={"center"} alignItems={"center"}>
 						<Typography className={"text-bold text-dark"} variant='h2' sx={{ textAlign: "center", lineHeight: 1 }}>
