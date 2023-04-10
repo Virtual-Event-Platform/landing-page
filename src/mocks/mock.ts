@@ -41,7 +41,7 @@ export const teams = [
         photo: landry
     },
     {
-        title: "Arleme",
+        nom: "Arleme",
         description: "Développeur FullStack",
         photo: arleme
     },
