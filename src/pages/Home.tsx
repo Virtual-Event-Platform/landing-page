@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 import { ScrollToTop } from '../components/Scrolls';
 import colors from "../colors/colors"
 import Typed from "react-typed";
-import { typedText } from '../mocks/mock';
+import { typedText, teamText } from '../mocks/mock';
 import BackdropFilter from "react-backdrop-filter";
 import hero from "../assets/images/hero.jpg";
 import team from "../assets/images/team.jpg";
@@ -32,11 +32,12 @@ const Home = (props: any) => {
 						<Container maxWidth={"lg"}>
 							<Stack width={"100%"} justifyContent={"center"} alignItems={"center"} height={"100vh"}>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
-									<Typography className={"text-bold"} sx={{ fontSize: {md: "10rem", sm: "8rem", xs: "6rem"}, textAlign: "center", lineHeight: 1 }}>
-										<div id="text-fg">Virtual Event</div>
+									<Typography className={"text-bold"} sx={{ fontSize: { md: "10rem", sm: "8rem", xs: "6rem" }, textAlign: "center", lineHeight: 1 }}>
+										<div className={"text-fg"}>Nomappa</div>
 									</Typography>
 									<Typed
-										style={{ color: "white", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "center", width: "75%" }}
+										className={"text-white"}
+										style={{ fontSize: "1.1rem", lineHeight: 1.6, textAlign: "center", width: "75%" }}
 										strings={typedText}
 										typeSpeed={10}
 										cursorChar=''
@@ -64,14 +65,14 @@ const Home = (props: any) => {
 					</Stack>
 				</BackdropFilter>
 			</Container>
-			<section id="team">
-				<Container maxWidth={false} style={{ width: "100%", margin: "5% 0% 5% 0%" }} >
+			<section id="team" style={{ display: "flex", justifyContent: "center", margin: "5% 0% 5% 0%", }}>
+				<Container maxWidth={"lg"}>
 					<Stack direction={"column"} justifyContent={"center"} alignItems={"center"}>
 						<Typography className={"text-bold text-dark"} variant='h2' sx={{ textAlign: "center", lineHeight: 1 }}>
 							Qui sommes nous ?
 						</Typography>
 						<Typography className={"text-dark"} mt={2.5} sx={{ fontSize: 18, textAlign: "center", lineHeight: 1.5, width: "50%" }}>
-							{typedText}
+							{teamText}
 						</Typography>
 					</Stack>
 					<Stack direction={"column"} justifyContent={"center"} alignItems={"center"}>

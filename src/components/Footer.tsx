@@ -19,13 +19,13 @@ const Footer = () => {
                 padding: 0
             }}
         >
-            <Stack bgcolor={"#000000e8"} sx={{ padding: "70px 2% 70px 2%", backdropFilter: "blur(80px) sepia(40%)" }}>
+            <Stack bgcolor={"#000000e8"} sx={{ padding: "50px 2% 50px 2%", backdropFilter: "blur(80px) sepia(40%)" }}>
                 <Grid container rowSpacing={4}>
                     <Grid item xs={12} md={4} justifyContent="start">
                         <Stack alignItems="center">
                             <Stack direction={"row"} alignItems={"center"} mb={1.5}>
                                 <LayersTwoToneIcon sx={{ display:"flex", mr: 1, color: "white" }} />
-                                <Typography variant="h5" noWrap component="a" href="/"
+                                <Typography variant="h6" noWrap component="a" href="/"
                                     sx={{
                                         mr: 2,
                                         display: "flex",
@@ -47,7 +47,7 @@ const Footer = () => {
                         <Stack alignItems="center">
                             <Stack direction={"row"} alignItems={"center"} mb={1.5}>
                                 <LinkIcon sx={{ display: "flex", mr: 1, color: "white" }} />
-                                <Typography variant="h5" noWrap component="a" href="/"
+                                <Typography variant="h6" noWrap component="a" href="/"
                                     sx={{
                                         mr: 2,
                                         display: "flex",
@@ -78,7 +78,7 @@ const Footer = () => {
                         <Stack alignItems="center">
                             <Stack direction={"row"} alignItems={"center"} mb={1.5}>
                                 <ContactSupportIcon sx={{ display: "flex", mr: 1, color: "white" }} />
-                                <Typography variant="h5" noWrap component="a" href="/"
+                                <Typography variant="h6" noWrap component="a" href="/"
                                     sx={{
                                         mr: 2,
                                         display: "flex",

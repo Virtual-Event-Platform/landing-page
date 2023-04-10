@@ -44,7 +44,7 @@ const Navbar = (props: any) => {
                                 mr: 2,
                                 display: { xs: 'none', md: 'flex' },
                                 fontWeight: 700,
-                                letterSpacing: '0.3rem',
+                                letterSpacing: '0.2rem',
                                 color: 'inherit',
                                 textDecoration: 'none',
                             }}
@@ -84,12 +84,12 @@ const Navbar = (props: any) => {
                                 display: { xs: 'flex', md: 'none' },
                                 flexGrow: 1,
                                 fontWeight: 700,
-                                letterSpacing: '.1rem',
+                                letterSpacing: '0.2rem',
                                 color: 'inherit',
                                 textDecoration: 'none',
                             }}
                         >
-                            V E P
+                            VEP
                         </Typography>
                         <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton

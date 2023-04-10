@@ -28,7 +28,7 @@
 	color: white !important;
 }
 
-.text-dark{
+.text-dark {
 	color: #222 !important;
 }
 
@@ -67,31 +67,35 @@
 	}
 }
 
-
-#text-fg {
+.text-fg {
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
 	background-image: url('../images/back.gif');
+	user-select: none;
+	font-family: "Josefin Sans" !important;
 }
 
+.text-white > span {
+	font-family: "Josefin Sans" !important;
+}
 
 .social-icon {
-    transition: 1s;
+	transition: 1s;
 }
 
 .social-icon:hover {
-    transition: 1s;
-    transform: scale(1.2);
+	transition: 1s;
+	transform: scale(1.2);
 
 }
 
-.sc-linkedin:hover{
-    background-color: #0075B5 !important;
+.sc-linkedin:hover {
+	background-color: #0075B5 !important;
 }
 
-.sc-facebook:hover{
-    background-color: #1778F2 !important;
+.sc-facebook:hover {
+	background-color: #1778F2 !important;
 }
 
 .shadow-sm {
