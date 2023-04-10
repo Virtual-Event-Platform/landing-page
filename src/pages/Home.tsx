@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 import { ScrollToTop } from '../components/Scrolls';
 import colors from "../colors/colors"
 import Typed from "react-typed";
-import { typedText, teamText, aboutText, serviceText, serviceTexts, serviceTitres } from '../mocks/mock';
+import { typedText, teamText, aboutText, serviceText, services, teams } from '../mocks/mock';
 import BackdropFilter from "react-backdrop-filter";
 import hero from "../assets/images/hero.jpg";
 import team from "../assets/images/team.jpg";
@@ -76,7 +76,7 @@ const Home = (props: any) => {
 			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "5% 0% 5% 0%", }}>
 				<Container maxWidth={"lg"}>
 					<Typography className={"text-bold text-dark"} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, lineHeight: 1, letterSpacing: 1.2 }}>
-						Virtual Event Platform...
+						La plateforme virtuelle 3D
 					</Typography>
 					<Grid container mt={2.5} alignItems={"center"} py={{ xs: 4, md: 0 }} bgcolor={colors.beigeSecondary}>
 						<Grid item md={5} xs={12}>
@@ -128,7 +128,7 @@ const Home = (props: any) => {
 			<section id="services" style={{ backgroundColor: colors.dark, display: "flex", justifyContent: "center", margin: "5% 0% 5% 0%", }}>
 				<Container maxWidth={"xl"} sx={{ padding: "5% 0% 6% 0%" }}>
 					<Typography className={"text-bold text-white"} variant='h2' sx={{ textAlign: "center", lineHeight: 1, letterSpacing: 1.2 }}>
-						Pourquoi utiliser VEP ?
+						Pourquoi l'utiliser ?
 					</Typography>
 					<Grid container mt={7}>
 						<Grid item md={4}>
@@ -140,8 +140,8 @@ const Home = (props: any) => {
 						</Grid>
 						<Grid item md={8}>
 							<Grid container columnSpacing={{ xs: 0, sm: 3, md: 3 }} rowSpacing={{ xs: 3, md: 0 }} mt={{ xs: 3, md: 0 }}>
-								{Array.from({ length: 3 }, (v, i) => (
-									<Grid item md={4} sm={6} xs={12} px={{ xs: 2, sm: 0, md: 0 }}>
+								{services.map((s) => (
+									<Grid key={s.title} item md={4} sm={6} xs={12} px={{ xs: 2, sm: 0, md: 0 }}>
 										<Stack className={"card-service"} p={3} spacing={1} justifyContent={"center"} alignItems={"center"} bgcolor={colors.darkSecondary}
 											sx={{ transform: { md: "rotate(8deg)", xs: "rotate(0deg)" } }}
 										>
@@ -149,10 +149,10 @@ const Home = (props: any) => {
 												<BsPinAngleFill style={{ fontSize: 20, color: colors.blue }} />
 											</Stack>
 											<Typography className={"text-bold"} variant='h5' sx={{ textAlign: "center", lineHeight: 1, color: colors.beige, letterSpacing: 3 }}>
-												{serviceTitres[i]}
+												{s.title}
 											</Typography>
 											<Typography className={"text-white"} sx={{ textAlign: "center", fontSize: 16.2, lineHeight: 1.5 }}>
-												{serviceTexts[i]}
+												{s.description}
 											</Typography>
 										</Stack>
 									</Grid>
@@ -176,19 +176,19 @@ const Home = (props: any) => {
 						<Divider sx={{ borderBottom: `1px solid ${colors.beige}`, marginY: 4, width: "70%" }} />
 					</Stack>
 					<Grid container rowSpacing={3} sx={{ justifyContent: "center", alignItems: "center" }}>
-						{Array.from({ length: 5 }, (_) => (
-							<Grid item md={4} sm={6} xs={12}>
+						{teams.map((m) => (
+							<Grid key={m.nom} item md={4} sm={6} xs={12}>
 								<Stack justifyContent={"center"} alignItems={"center"}>
 									<Stack direction={"row"} alignItems={"center"} spacing={0.8}>
-										<img src={team} alt="Student" width="80"
+										<img src={m.photo} alt="Student" width="80"
 											className={"rounded-circle img-thumbnail shadow-sm"}
 										/>
 										<Stack spacing={1.5}>
 											<Typography className={"text-dark"} sx={{ lineHeight: 1.3, fontSize: 18 }}>
-												Landry Manankoraisina
+												{m.nom}
 											</Typography>
 											<Typography variant='body2' sx={{ lineHeight: 0.7, color: colors.purple }}>
-												Développeur FullStack
+												{m.description}
 											</Typography>
 										</Stack>
 									</Stack>
