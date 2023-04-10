@@ -33,8 +33,8 @@ const Home = (props: any) => {
 						<Container maxWidth={"lg"}>
 							<Stack width={"100%"} justifyContent={"center"} alignItems={"center"} height={"100vh"}>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
-									<Typography className={"text-bold"} sx={{ fontSize: { md: "10rem", sm: "8rem", xs: "6rem" }, textAlign: "center", lineHeight: 1 }}>
-										<div className={"text-fg"}>Nomapps</div>
+									<Typography className={"text-bold"} sx={{ letterSpacing: 20, fontSize: { md: "14rem", sm: "8rem", xs: "6rem" }, textAlign: "center", lineHeight: 1 }}>
+										<div className={"text-fg"}>Zavoka</div>
 									</Typography>
 									<Typed
 										className={"text-white"}
@@ -128,7 +128,7 @@ const Home = (props: any) => {
 			<section id="services" style={{ backgroundColor: colors.dark, display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
 				<Container maxWidth={"xl"} sx={{ padding: "5% 0% 6% 0%" }}>
 					<Typography className={"text-bold text-white"} variant='h2' sx={{ textAlign: "center", lineHeight: 1, letterSpacing: 1.2 }}>
-						Pourquoi l'utiliser ?
+						Qu'offrons-nous ?
 					</Typography>
 					<Grid container mt={7}>
 						<Grid item md={4}>
@@ -167,10 +167,10 @@ const Home = (props: any) => {
 					<Typography className={"text-bold text-dark"} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, lineHeight: 1, letterSpacing: 1.2 }}>
 						Découvrez nos offres
 					</Typography>
-					<Typography className={"text-dark"} my={{ xs: 3, md: 2 }} sx={{ width: {md :"50%", xs: "100%"}, textAlign: { xs: "center", md: "left" }, fontSize: 17, lineHeight: 1.5 }}>
+					<Typography className={"text-dark"} my={{ xs: 3, md: 2 }} sx={{ width: { md: "50%", xs: "100%" }, textAlign: { xs: "center", md: "left" }, fontSize: 17, lineHeight: 1.5 }}>
 						{pricingText}
 					</Typography>
-					<Grid container columnSpacing={3} rowSpacing={{xs: 3, md : 0}} alignItems={{md:"center", xs: "start"}} py={{ xs: 4, md: 0 }}>
+					<Grid container columnSpacing={3} rowSpacing={{ xs: 3, md: 0 }} alignItems={{ md: "center", xs: "start" }} py={{ xs: 4, md: 0 }}>
 						{Array.from({ length: 3 }, (_, index) => (
 							<Grid item md={4} sm={6} xs={12}>
 								<Stack p={5} borderRadius={5} justifyContent={"center"} bgcolor={index === 1 ? "#fc9546" : "white"} sx={{ border: index === 1 ? "1px solid white" : "1px solid #2b2b2740" }}>
@@ -207,7 +207,7 @@ const Home = (props: any) => {
 															fontSize: "16px",
 															width: "140px",
 															borderRadius: 15,
-															backgroundColor : "white"
+															backgroundColor: "white"
 														}}
 														disableElevation
 													>
@@ -245,26 +245,26 @@ const Home = (props: any) => {
 						<Typography className={"text-bold text-dark"} variant='h2' sx={{ textAlign: "center", lineHeight: 1 }}>
 							Qui sommes nous ?
 						</Typography>
-						<Typography className={"text-dark"} mt={2.5} sx={{ fontSize: 18, textAlign: "center", lineHeight: 1.5, width: "50%" }}>
+						<Typography className={"text-dark"} mt={2.5} sx={{ fontSize: 18, textAlign: "center", lineHeight: 1.5, width: "80%" }}>
 							{teamText}
 						</Typography>
 					</Stack>
 					<Stack direction={"column"} justifyContent={"center"} alignItems={"center"}>
 						<Divider sx={{ borderBottom: `1px solid ${colors.beige}`, marginY: 4, width: "70%" }} />
 					</Stack>
-					<Grid container rowSpacing={3} sx={{ justifyContent: "center", alignItems: "center" }}>
+					<Grid container columnSpacing={1} rowSpacing={3} sx={{ justifyContent: "center", alignItems: "center" }}>
 						{teams.map((m) => (
 							<Grid key={m.nom} item md={4} sm={6} xs={12}>
-								<Stack justifyContent={"center"} alignItems={"center"}>
-									<Stack direction={"row"} alignItems={"center"} spacing={0.8}>
+								<Stack justifyContent={"center"}>
+									<Stack direction={"row"} justifyContent={"start"} alignItems={"center"} spacing={0.8}>
 										<img src={m.photo} alt="Student" width="80"
 											className={"rounded-circle img-thumbnail shadow-sm"}
 										/>
-										<Stack spacing={1.5}>
+										<Stack spacing={0.5}>
 											<Typography className={"text-dark"} sx={{ lineHeight: 1.3, fontSize: 18 }}>
 												{m.nom}
 											</Typography>
-											<Typography variant='body2' sx={{ lineHeight: 0.7, color: colors.purple }}>
+											<Typography variant='body2' sx={{ lineHeight: 1.5, color: colors.purple }}>
 												{m.description}
 											</Typography>
 										</Stack>

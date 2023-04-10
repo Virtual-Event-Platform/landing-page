@@ -35,7 +35,7 @@ const Footer = () => {
                                         textDecoration: 'none',
                                     }}
                                 >
-                                    Landing
+                                    Zavoka
                                 </Typography>
                             </Stack>
                             <Typography className={"text-white"} variant='body1' sx={{ lineHeight: 1.5, textAlign: "center" }}>
