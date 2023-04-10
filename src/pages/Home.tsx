@@ -151,7 +151,7 @@ const Home = (props: any) => {
 											<Typography className={"text-bold"} variant='h5' sx={{ textAlign: "center", lineHeight: 1, color: colors.beige, letterSpacing: 3 }}>
 												Service
 											</Typography>
-											<Typography className={"text-white"} sx={{ textAlign: "center", fontSize: 17, lineHeight: 1.5 }}>
+											<Typography className={"text-white"} sx={{ textAlign: "center", fontSize: 16.2, lineHeight: 1.5 }}>
 												{serviceText}
 											</Typography>
 										</Stack>
