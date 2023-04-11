@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 import { ScrollToTop } from '../components/Scrolls';
 import colors from "../colors/colors"
 import Typed from "react-typed";
-import { typedText, teamText, aboutText, serviceText, services, teams, pricingText, cardPricingText } from '../mocks/mock';
+import { typedText, teamText, aboutText, serviceText, services, teams, pricingText, cardPrincing } from '../mocks/mock';
 import BackdropFilter from "react-backdrop-filter";
 import hero from "../assets/images/hero.jpg";
 import about from "../assets/images/about.jpg";
@@ -175,21 +175,21 @@ const Home = (props: any) => {
 							<Grid item md={4} sm={6} xs={12}>
 								<Stack p={5} borderRadius={5} justifyContent={"center"} bgcolor={index === 1 ? "#fc9546" : "white"} sx={{ border: index === 1 ? "1px solid white" : "1px solid #2b2b2740" }}>
 									<Typography className={index === 1 ? "text-white text-bold" : "text-dark text-bold"} variant='h5' sx={{ textAlign: "center", lineHeight: 1, letterSpacing: 3 }}>
-										{index === 0 ? "Bronze" : index === 1 ? "Gold" : "Silver"}
+										{cardPrincing[index].titre}
 									</Typography>
 									<Typography my={2} className={index === 1 ? "text-white" : "text-dark"} sx={{ textAlign: "center", fontSize: 16.2, lineHeight: 1.5 }}>
-										{cardPricingText}
+										{cardPrincing[index].description}
 									</Typography>
 									<Typography className={index === 1 ? "text-white text-bold" : "text-pink text-bold"} sx={{ textAlign: "center", fontSize: 30, lineHeight: 1.5 }}>
-										500 000 Ar
+										{cardPrincing[index].price}
 									</Typography>
 									<Stack mt={2} direction={"row"} justifyContent={"start"}>
 										<Stack px={5} spacing={1}>
-											{Array.from({ length: index === 1 ? 5 : 3 }, (_, _index) => (
+											{Array.from({ length: cardPrincing[index].benefice.length }, (_, _index) => (
 												<Stack spacing={1} direction={"row"}>
 													<CheckCircleIcon sx={{ color: index === 1 ? "white" : "#fc9546" }} />
 													<Typography className={index === 1 ? "text-white" : "text-dark"} sx={{ textAlign: "center", fontSize: 16.2, lineHeight: 1.5 }}>
-														Bénéfice
+														{cardPrincing[index].benefice[_index]}
 													</Typography>
 												</Stack>
 											))}

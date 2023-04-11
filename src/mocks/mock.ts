@@ -13,9 +13,7 @@ export const aboutText = "Découvrez une nouvelle dimension pour vos événement
 
 export const serviceText = "Zavoka offre une plateforme 3D interactive qui vous permet de personnaliser vos différents stands d'exposition, diffuser des vidéos simultanément dans une salle de conférence virtuelle et afficher les logos de vos partenaires à différents niveaux de visibilité pour créer un événement virtuel unique et engageant.";
 
-export const pricingText = aboutText;
-
-export const cardPricingText = "Nous sommes une groupe de personnes réunies";
+export const pricingText = "Découvrez nos offres commerciales adaptées à vos besoins et à la durée de votre événement. Chacune de nos formules inclut les fonctionnalités de base pour une expérience optimale.";
 
 export const services = [
     {
@@ -59,3 +57,54 @@ export const teams = [
         photo: gaetan
     }
 ];
+
+
+/*
+Jusqu'à X utilisateurs simultanés
+Jusqu'à X exposants
+Durée de l'événement : 1 journée
+Accès à la plateforme 3D interactive
+*/
+export const cardPrincing = [
+    {
+        titre: "Essentielle",
+        description: "La formule idéale pour les événements virtuels de petite envergure.",
+        benefice: [
+            "Base inclus",
+            "🔝 100 utilisateurs",
+            "🔝 20 exposants",
+            "🔝 une journée",
+            "⛑️ Email",
+            ""
+        ],
+        price: "300 000 Ar",
+    },
+    {
+        titre: "Standard",
+        description: "La formule idéale pour les événements virtuels de moyenne envergure.",
+        benefice: [
+            "Base inclus",
+            "🔝 500 utilisateurs",
+            "🔝 60 exposants",
+            "🔝 3 jours",
+            "⛑️ Chat - telephone",
+            "Quiz"
+        ],
+        price: "500 000 Ar",
+    },
+    {
+        titre: "Premium",
+        description: "La formule idéale pour les événements virtuels de grande envergure.",
+        benefice: [
+            "Base inclus",
+            "🔝 2000 utilisateurs",
+            "🔝 200 exposants",
+            "🔝 7 jours",
+            "⛑️ Intervention",
+            "Sondages et quiz",
+        ],
+        price: "2 000 000 Ar",
+    }
+];
+
+
