@@ -18,13 +18,13 @@ import Footer from '../components/Footer';
 
 const Home = (props: any) => {
 	return (
-		<div style={{overflowX: "hidden"}}>
+		<div style={{ overflowX: "hidden" }}>
 			<Container id="hero" maxWidth={false}
 				style={{
 					height: "100vh",
 					background: `url(${hero}) no-repeat center center fixed #000`,
 					backgroundSize: "cover",
-					padding : 0
+					padding: 0
 				}}>
 				<Navbar />
 				<BackdropFilter filter={"blur(80px) sepia(30%)"} html2canvasOpts={{ allowTaint: true }}>
@@ -32,7 +32,7 @@ const Home = (props: any) => {
 						<Container maxWidth={"lg"}>
 							<Stack width={"100%"} justifyContent={"center"} alignItems={"center"} height={"100vh"}>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
-									<Typography className={"text-bold"} sx={{ letterSpacing: 20, fontSize: { md: "14rem", sm: "8rem", xs: "6rem" }, textAlign: "center", lineHeight: 1 }}>
+									<Typography className={"text-bold"} component={"div"} sx={{ letterSpacing: 20, fontSize: { md: "14rem", sm: "8rem", xs: "6rem" }, textAlign: "center", lineHeight: 1 }}>
 										<div className={"text-fg"}>Zavoka</div>
 									</Typography>
 									<Typed
@@ -171,7 +171,7 @@ const Home = (props: any) => {
 					</Typography>
 					<Grid container columnSpacing={3} rowSpacing={{ xs: 3, md: 0 }} alignItems={{ md: "center", xs: "start" }} py={{ xs: 4, md: 0 }}>
 						{Array.from({ length: 3 }, (_, index) => (
-							<Grid item md={4} sm={6} xs={12}>
+							<Grid key={index} item md={4} sm={6} xs={12}>
 								<Stack p={5} borderRadius={5} justifyContent={"center"} bgcolor={index === 1 ? "#fc9546" : "white"} sx={{ border: index === 1 ? "1px solid white" : "1px solid #2b2b2740" }}>
 									<Typography className={index === 1 ? "text-white text-bold" : "text-dark text-bold"} variant='h5' sx={{ textAlign: "center", lineHeight: 1, letterSpacing: 3 }}>
 										{cardPrincing[index].titre}
@@ -185,7 +185,7 @@ const Home = (props: any) => {
 									<Stack mt={2} direction={"row"} justifyContent={"start"}>
 										<Stack px={5} spacing={1}>
 											{Array.from({ length: cardPrincing[index].benefice.length }, (_, _index) => (
-												<Stack spacing={1} direction={"row"}>
+												<Stack key={_index} spacing={1} direction={"row"}>
 													<CheckCircleIcon sx={{ color: index === 1 ? "white" : "#09b66e" }} />
 													<Typography className={index === 1 ? "text-white" : "text-dark"} sx={{ textAlign: "center", fontSize: 16.2, lineHeight: 1.5 }}>
 														{cardPrincing[index].benefice[_index]}
