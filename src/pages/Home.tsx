@@ -18,17 +18,16 @@ import Footer from '../components/Footer';
 
 const Home = (props: any) => {
 	return (
-		<>
+		<div style={{overflowX: "hidden"}}>
 			<Container id="hero" maxWidth={false}
 				style={{
 					height: "100vh",
 					background: `url(${hero}) no-repeat center center fixed #000`,
 					backgroundSize: "cover",
-					paddingRight: 0,
-					paddingLeft: 0
+					padding : 0
 				}}>
 				<Navbar />
-				<BackdropFilter filter={"blur(80px) sepia(40%)"} html2canvasOpts={{ allowTaint: true }}>
+				<BackdropFilter filter={"blur(80px) sepia(30%)"} html2canvasOpts={{ allowTaint: true }}>
 					<Stack direction="column" bgcolor={"#000000c7"} width={"100%"}>
 						<Container maxWidth={"lg"}>
 							<Stack width={"100%"} justifyContent={"center"} alignItems={"center"} height={"100vh"}>
@@ -75,8 +74,8 @@ const Home = (props: any) => {
 			</Container>
 			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
 				<Container maxWidth={"lg"}>
-					<Typography className={"text-bold text-dark"} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, lineHeight: 1, letterSpacing: 1.2 }}>
-						La plateforme virtuelle 3D
+					<Typography className={"text-bold text-dark"} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, lineHeight: 1, letterSpacing: 1.5 }}>
+						Zavoka plateforme
 					</Typography>
 					<Grid container mt={2.5} alignItems={"center"} py={{ xs: 4, md: 0 }} bgcolor={colors.beigeSecondary}>
 						<Grid item md={5} xs={12}>
@@ -187,7 +186,7 @@ const Home = (props: any) => {
 										<Stack px={5} spacing={1}>
 											{Array.from({ length: cardPrincing[index].benefice.length }, (_, _index) => (
 												<Stack spacing={1} direction={"row"}>
-													<CheckCircleIcon sx={{ color: index === 1 ? "white" : "#fc9546" }} />
+													<CheckCircleIcon sx={{ color: index === 1 ? "white" : "#09b66e" }} />
 													<Typography className={index === 1 ? "text-white" : "text-dark"} sx={{ textAlign: "center", fontSize: 16.2, lineHeight: 1.5 }}>
 														{cardPrincing[index].benefice[_index]}
 													</Typography>
@@ -287,7 +286,7 @@ const Home = (props: any) => {
 					</Fab>
 				</Link>
 			</ScrollToTop>
-		</>
+		</div>
 	);
 };
 

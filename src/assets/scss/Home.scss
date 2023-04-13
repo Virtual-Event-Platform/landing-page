@@ -95,10 +95,9 @@
 	color: transparent;
 	background-image: url('../images/back.gif');
 	user-select: none;
-	font-family: "Josefin Sans" !important;
 }
 
-.text-white>span {
+.text-white > span, .text-fg, #apropos > div > h4 {
 	font-family: "Josefin Sans" !important;
 }
 

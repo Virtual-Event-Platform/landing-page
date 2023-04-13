@@ -73,24 +73,10 @@ export const cardPrincing = [
             "Base inclus",
             "100 utilisateurs",
             "20 exposants",
-            "une journée",
-            "Email",
-            ""
+            "Une journée",
+            "Email"
         ],
         price: "500 000 Ar",
-    },
-    {
-        titre: "Standard",
-        description: "La formule idéale pour les événements virtuels de moyenne envergure.",
-        benefice: [
-            "Base inclus",
-            "500 utilisateurs",
-            "60 exposants",
-            "3 jours",
-            "Chat - telephone",
-            "Quiz"
-        ],
-        price: "1 000 000 Ar",
     },
     {
         titre: "Premium",
@@ -101,9 +87,21 @@ export const cardPrincing = [
             "150 exposants",
             "7 jours",
             "Intervention",
-            "Sondages et quiz",
+            "Sondages et Quiz",
         ],
         price: "2 000 000 Ar",
+    },
+    {
+        titre: "Standard",
+        description: "La formule idéale pour les événements virtuels de moyenne envergure.",
+        benefice: [
+            "Base inclus",
+            "500 utilisateurs",
+            "60 exposants",
+            "3 jours",
+            "Chat - Telephone"
+        ],
+        price: "1 000 000 Ar",
     }
 ];
 
