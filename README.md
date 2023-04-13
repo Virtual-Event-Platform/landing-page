@@ -1,2 +1,2 @@
-# landing-page
-Landing page for project
+# Landing-page
+Landing page for zavoka plateform.
