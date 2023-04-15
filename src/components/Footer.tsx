@@ -38,7 +38,7 @@ const Footer = () => {
                                     Zavoka
                                 </Typography>
                             </Stack>
-                            <Typography className={"text-white"} variant='body1' sx={{ lineHeight: 1.5, textAlign: "center" }}>
+                            <Typography className={"text-white"} variant='body1' sx={{ lineHeight: 1.5, textAlign: "center", width: "70%" }}>
                                 La plateforme 3D interactive qui ajoute une dimension supplémentaire à vos événements.
                             </Typography>
                         </Stack>

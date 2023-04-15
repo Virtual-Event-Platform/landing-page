@@ -42,20 +42,28 @@ const Home = (props: any) => {
 										typeSpeed={10}
 										cursorChar=''
 									/>
-									<Button className='radius-zero hover-dark' variant="contained"
-										sx={{
-											my: 3,
-											color: 'white',
-											textTransform: 'none',
-											fontFamily: "product",
-											fontSize: "16px",
-											width: "150px",
-											backgroundColor: `${colors.beige}`,
-										}}
-										disableElevation
-									>
-										En savoir plus
-									</Button>
+									<Link
+										smooth spy
+										duration={400}
+										offset={-90}
+										style={{ textDecoration: "none" }}
+										to="services">
+										<Button className='radius-zero hover-dark' variant="contained"
+											sx={{
+												my: 3,
+												color: 'white',
+												textTransform: 'none',
+												fontFamily: "product",
+												fontSize: "16px",
+												width: "150px",
+												backgroundColor: `${colors.beige}`,
+											}}
+											disableElevation
+										>
+											En savoir plus
+										</Button>
+									</Link>
+
 								</Stack>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
 									<Link
@@ -75,7 +83,7 @@ const Home = (props: any) => {
 			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
 				<Container maxWidth={"lg"}>
 					<Typography className={"text-bold text-dark"} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, lineHeight: 1, letterSpacing: 1.5 }}>
-						Zavoka plateforme
+						Connaitre la plateforme
 					</Typography>
 					<Grid container mt={2.5} alignItems={"center"} py={{ xs: 4, md: 0 }} bgcolor={colors.beigeSecondary}>
 						<Grid item md={5} xs={12}>
