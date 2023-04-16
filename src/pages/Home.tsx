@@ -32,7 +32,7 @@ const Home = (props: any) => {
 						<Container maxWidth={"lg"}>
 							<Stack width={"100%"} justifyContent={"center"} alignItems={"center"} height={"100vh"}>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
-									<Typography className={"text-bold"} component={"div"} sx={{ letterSpacing: 20, fontSize: { md: "14rem", sm: "8rem", xs: "6rem" }, textAlign: "center", lineHeight: 1 }}>
+									<Typography className={"text-bold"} component={"div"} sx={{ letterSpacing: 20, fontSize: { md: "14rem", sm: "8rem", xs: "4.5rem" }, textAlign: "center", lineHeight: 1 }}>
 										<div className={"text-fg"}>Zavoka</div>
 									</Typography>
 									<Typed
@@ -53,7 +53,6 @@ const Home = (props: any) => {
 												my: 3,
 												color: 'white',
 												textTransform: 'none',
-												fontFamily: "product",
 												fontSize: "16px",
 												width: "150px",
 												backgroundColor: `${colors.beige}`,
@@ -63,7 +62,6 @@ const Home = (props: any) => {
 											En savoir plus
 										</Button>
 									</Link>
-
 								</Stack>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
 									<Link
@@ -102,7 +100,6 @@ const Home = (props: any) => {
 											sx={{
 												color: 'white',
 												textTransform: 'none',
-												fontFamily: "product",
 												fontSize: "16px",
 												width: "150px",
 												backgroundColor: `#fc9546`,
@@ -117,7 +114,6 @@ const Home = (props: any) => {
 											sx={{
 												color: "#2b2b27e1",
 												textTransform: 'none',
-												fontFamily: "product",
 												fontSize: "16px",
 												width: "170px",
 											}}
@@ -210,7 +206,6 @@ const Home = (props: any) => {
 														sx={{
 															color: "#fc9546",
 															textTransform: 'none',
-															fontFamily: "product",
 															fontSize: "16px",
 															width: "140px",
 															borderRadius: 15,
@@ -227,7 +222,6 @@ const Home = (props: any) => {
 														sx={{
 															color: "#2b2b27e1",
 															textTransform: 'none',
-															fontFamily: "product",
 															fontSize: "16px",
 															width: "140px",
 															borderRadius: 15
