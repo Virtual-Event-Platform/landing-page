@@ -24,16 +24,9 @@ const Footer = () => {
                     <Grid item xs={12} md={4} justifyContent="start">
                         <Stack alignItems="center">
                             <Stack direction={"row"} alignItems={"center"} mb={1.5}>
-                                <LayersTwoToneIcon sx={{ display:"flex", mr: 1, color: "white" }} />
+                                <LayersTwoToneIcon sx={{ display: "flex", mr: 1, color: "white" }} />
                                 <Typography variant="h6" noWrap component="a" href="/"
-                                    sx={{
-                                        mr: 2,
-                                        display: "flex",
-                                        fontWeight: 700,
-                                        letterSpacing: '.1rem',
-                                        color: 'white',
-                                        textDecoration: 'none',
-                                    }}
+                                    sx={{ mr: 2, display: "flex", fontWeight: 700, letterSpacing: '.1rem', color: 'white', textDecoration: 'none' }}
                                 >
                                     Zavoka
                                 </Typography>
@@ -48,14 +41,7 @@ const Footer = () => {
                             <Stack direction={"row"} alignItems={"center"} mb={1.5}>
                                 <LinkIcon sx={{ display: "flex", mr: 1, color: "white" }} />
                                 <Typography variant="h6" noWrap component="a" href="/"
-                                    sx={{
-                                        mr: 2,
-                                        display: "flex",
-                                        fontWeight: 700,
-                                        letterSpacing: '.1rem',
-                                        color: 'white',
-                                        textDecoration: 'none',
-                                    }}
+                                    sx={{ mr: 2, display: "flex", fontWeight: 700, letterSpacing: '.1rem', color: 'white', textDecoration: 'none' }}
                                 >
                                     Réseaux sociaux
                                 </Typography>
@@ -79,14 +65,7 @@ const Footer = () => {
                             <Stack direction={"row"} alignItems={"center"} mb={1.5}>
                                 <ContactSupportIcon sx={{ display: "flex", mr: 1, color: "white" }} />
                                 <Typography variant="h6" noWrap component="a" href="/"
-                                    sx={{
-                                        mr: 2,
-                                        display: "flex",
-                                        fontWeight: 700,
-                                        letterSpacing: '.1rem',
-                                        color: 'white',
-                                        textDecoration: 'none',
-                                    }}
+                                    sx={{ mr: 2, display: "flex", fontWeight: 700, letterSpacing: '.1rem', color: 'white', textDecoration: 'none' }}
                                 >
                                     Nous contacter
                                 </Typography>

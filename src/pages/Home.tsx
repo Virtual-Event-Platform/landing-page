@@ -42,34 +42,16 @@ const Home = (props: any) => {
 										typeSpeed={10}
 										cursorChar=''
 									/>
-									<Link
-										smooth spy
-										duration={400}
-										offset={-90}
-										style={{ textDecoration: "none" }}
-										to="services">
-										<Button className='radius-zero hover-dark' variant="contained"
-											sx={{
-												my: 3,
-												color: 'white',
-												textTransform: 'none',
-												fontSize: "16px",
-												width: "150px",
-												backgroundColor: `${colors.beige}`,
-											}}
-											disableElevation
+									<Link to="services" smooth spy duration={400} offset={-90} style={{ textDecoration: "none" }}>
+										<Button className='radius-zero hover-dark' variant="contained" disableElevation
+											sx={{ my: 3, color: 'white', textTransform: 'none', fontSize: "16px", width: "150px", backgroundColor: `${colors.beige}` }}
 										>
 											En savoir plus
 										</Button>
 									</Link>
 								</Stack>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
-									<Link
-										smooth spy
-										duration={400}
-										offset={-90}
-										style={{ textDecoration: "none" }}
-										to="apropos">
+									<Link to="apropos" smooth spy duration={400} offset={-90} style={{ textDecoration: "none" }}>
 										<BsChevronDoubleDown className={"shimmer-icon"} style={{ color: "#fff", fontSize: 18, cursor: "pointer" }} />
 									</Link>
 								</Stack>
@@ -96,28 +78,15 @@ const Home = (props: any) => {
 								</Typography>
 								<Stack direction={"row"} justifyContent={{ xs: "center", md: "start" }} spacing={1.2}>
 									<Link to="services" smooth spy duration={400} offset={-90} style={{ textDecoration: "none" }}>
-										<Button className='radius-zero hover-beige' variant="contained"
-											sx={{
-												color: 'white',
-												textTransform: 'none',
-												fontSize: "16px",
-												width: "150px",
-												backgroundColor: `#fc9546`,
-											}}
-											disableElevation
+										<Button className='radius-zero hover-beige' variant="contained" disableElevation
+											sx={{ color: 'white', textTransform: 'none', fontSize: "16px", width: "150px", backgroundColor: `#fc9546` }}
 										>
 											Nos services
 										</Button>
 									</Link>
 									<Link to="footer" smooth spy duration={400} offset={-90} style={{ textDecoration: "none" }}>
-										<Button className={"border-dark radius-zero"} variant="outlined"
-											sx={{
-												color: "#2b2b27e1",
-												textTransform: 'none',
-												fontSize: "16px",
-												width: "170px",
-											}}
-											disableElevation
+										<Button className={"border-dark radius-zero"} variant="outlined" disableElevation
+											sx={{ color: "#2b2b27e1", textTransform: 'none', fontSize: "16px", width: "170px" }}
 										>
 											Nous contacter
 										</Button>
@@ -202,31 +171,16 @@ const Home = (props: any) => {
 										{
 											index === 1 ? (
 												<Link to="footer" smooth spy duration={400} offset={-90} style={{ textDecoration: "none" }}>
-													<Button className={"hover-plan"} variant="contained"
-														sx={{
-															color: "#fc9546",
-															textTransform: 'none',
-															fontSize: "16px",
-															width: "140px",
-															borderRadius: 15,
-															backgroundColor: "white"
-														}}
-														disableElevation
+													<Button className={"hover-plan"} variant="contained" disableElevation
+														sx={{ color: "#fc9546", textTransform: 'none', fontSize: "16px", width: "140px", borderRadius: 15, backgroundColor: "white" }}
 													>
 														Choisir
 													</Button>
 												</Link>
 											) : (
 												<Link to="footer" smooth spy duration={400} offset={-90} style={{ textDecoration: "none" }}>
-													<Button className={"border-dark"} variant="outlined"
-														sx={{
-															color: "#2b2b27e1",
-															textTransform: 'none',
-															fontSize: "16px",
-															width: "140px",
-															borderRadius: 15
-														}}
-														disableElevation
+													<Button className={"border-dark"} variant="outlined" disableElevation
+														sx={{ color: "#2b2b27e1", textTransform: 'none', fontSize: "16px", width: "140px", borderRadius: 15 }}
 													>
 														Choisir
 													</Button>
