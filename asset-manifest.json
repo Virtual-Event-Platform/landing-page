@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/landing-page/static/css/main.376aa4be.css",
+    "main.js": "/landing-page/static/js/main.913ac36e.js",
+    "static/js/787.397b12e4.chunk.js": "/landing-page/static/js/787.397b12e4.chunk.js",
+    "static/media/back.gif": "/landing-page/static/media/back.0a85e1ff45f616467f70.gif",
+    "static/media/hero.jpg": "/landing-page/static/media/hero.f4a92d99aabd96f8d707.jpg",
+    "static/media/about.jpg": "/landing-page/static/media/about.cc841767e9dcc542a119.jpg",
+    "static/media/gaetan.jpg": "/landing-page/static/media/gaetan.0189b985e28479f2072c.jpg",
+    "static/media/MabryPro-Regular.woff": "/landing-page/static/media/MabryPro-Regular.6a60d085307029187d83.woff",
+    "static/media/raja.jpg": "/landing-page/static/media/raja.04240b099d48732301e3.jpg",
+    "static/media/arleme.jpg": "/landing-page/static/media/arleme.b31f56451e4adf4e2ab1.jpg",
+    "static/media/damia.jpg": "/landing-page/static/media/damia.e15600559aaea97ddb0d.jpg",
+    "static/media/landry.jpg": "/landing-page/static/media/landry.2b48d15a91b033496e2d.jpg",
+    "index.html": "/landing-page/index.html",
+    "main.376aa4be.css.map": "/landing-page/static/css/main.376aa4be.css.map",
+    "main.913ac36e.js.map": "/landing-page/static/js/main.913ac36e.js.map",
+    "787.397b12e4.chunk.js.map": "/landing-page/static/js/787.397b12e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.376aa4be.css",
+    "static/js/main.913ac36e.js"
+  ]
+}
