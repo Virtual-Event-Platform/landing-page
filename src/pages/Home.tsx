@@ -32,12 +32,12 @@ const Home = (props: any) => {
 						<Container maxWidth={"lg"}>
 							<Stack width={"100%"} justifyContent={"center"} alignItems={"center"} height={"100vh"}>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
-									<Typography className={"text-bold"} component={"div"} sx={{ letterSpacing: 20, fontSize: { md: "14rem", sm: "8rem", xs: "4.5rem" }, textAlign: "center", lineHeight: 1 }}>
+									<Typography className={"text-bold"} component={"div"} sx={{ letterSpacing: 10, fontSize: { md: "14rem", sm: "8rem", xs: "4.5rem" }, textAlign: "center", lineHeight: 1 }}>
 										<div className={"text-fg"}>Zavoka</div>
 									</Typography>
 									<Typed
 										className={"text-white"}
-										style={{ fontSize: "1.1rem", lineHeight: 1.6, textAlign: "center", width: "75%" }}
+										style={{ fontSize: "1.08rem", lineHeight: 1.6, textAlign: "center", width: "75%" }}
 										strings={typedText}
 										typeSpeed={10}
 										cursorChar=''
@@ -62,9 +62,6 @@ const Home = (props: any) => {
 			</Container>
 			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
 				<Container maxWidth={"lg"}>
-					<Typography className={"text-bold text-dark"} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, lineHeight: 1, letterSpacing: 1.5 }}>
-						Connaitre la plateforme
-					</Typography>
 					<Grid container mt={2.5} alignItems={"center"} py={{ xs: 4, md: 0 }} bgcolor={colors.beigeSecondary}>
 						<Grid item md={5} xs={12}>
 							<Stack direction="row" width={"100%"} justifyContent={{ xs: "center", md: "start" }}>
@@ -73,6 +70,9 @@ const Home = (props: any) => {
 						</Grid>
 						<Grid item md={7} xs={12}>
 							<Stack spacing={3} px={2}>
+								<Typography className={"text-dark"} mt={{ xs: 3, md: "unset" }} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, letterSpacing: 1 }}>
+									Connaitre la plateforme
+								</Typography>
 								<Typography className={"text-dark"} mt={{ xs: 3, md: "unset" }} sx={{ textAlign: { xs: "center", md: "left" }, fontSize: 17, lineHeight: 1.5 }}>
 									{aboutText}
 								</Typography>
