@@ -1,6 +1,7 @@
 {
-  "name": "vep",
+  "name": "zavoka",
   "version": "0.1.0",
+  "homepage": "https://Virtual-Event-Platform.github.io/landing-page",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -15,6 +16,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@types/react-scroll": "^1.8.6",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-backdrop-filter": "^2.1.0",
     "react-dom": "^18.2.0",
@@ -27,6 +29,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
