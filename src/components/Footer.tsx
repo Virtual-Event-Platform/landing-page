@@ -89,7 +89,7 @@ const Footer = () => {
                     <Divider sx={{ borderBottom: `0.5px solid #ffffff30`, marginY: 2, width: "60%" }} />
                 </Stack>
                 <p style={{ textAlign: "center", color: "white", fontSize: 15, cursor: "pointer" }} onClick={() => { window.open("https://iteam-s.mg", '_blank') }}>
-                    Landing copyright {new Date().getFullYear()}
+                    Zavoka copyright {new Date().getFullYear()}
                 </p>
             </Stack>
         </Container >

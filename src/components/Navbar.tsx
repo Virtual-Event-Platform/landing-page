@@ -11,8 +11,8 @@ import { ElevationScroll } from "./Scrolls";
 const sections = [
     { name: "A propos", link: "apropos" },
     { name: "Services", link: "services" },
-    { name: "Pricing", link: "pricing" },
-    { name: "Team", link: "team" },
+    { name: "Offres", link: "pricing" },
+    { name: "Equipe", link: "team" },
 ];
 
 
