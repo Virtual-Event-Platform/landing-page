@@ -60,7 +60,7 @@ const Home = (props: any) => {
 					</Stack>
 				</BackdropFilter>
 			</Container>
-			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "6% 0% 7% 0%", }}>
+			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "5% 0% 6% 0%", }}>
 				<Container maxWidth={"lg"}>
 					<Grid container mt={2.5} alignItems={"center"} py={{ xs: 4, md: 0 }} bgcolor={colors.beigeSecondary}>
 						<Grid item md={5} xs={12}>
