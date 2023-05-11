@@ -73,7 +73,7 @@ const Footer = () => {
                             <Stack direction={"row"} alignItems={"center"}>
                                 <MailOutlineIcon sx={{ display: "flex", mr: 1, color: "white" }} />
                                 <Typography className={"text-white"} variant='body1' sx={{ lineHeight: 1.8 }}>
-                                    virtual-event@gmail.com
+                                    zavoka@gmail.com
                                 </Typography>
                             </Stack>
                             <Stack direction={"row"} alignItems={"center"}>

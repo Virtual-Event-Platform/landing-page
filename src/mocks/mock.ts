@@ -15,6 +15,8 @@ export const serviceText = "Zavoka offre une plateforme 3D interactive qui vous 
 
 export const pricingText = "Découvrez nos offres commerciales adaptées à vos besoins et à la durée de votre événement. Chacune de nos formules inclut les fonctionnalités de base pour une expérience optimale.";
 
+export const eventText = "Découvrez nos offres commerciales adaptées à vos besoins et à la durée de votre événement. Chacune de nos formules inclut les fonctionnalités de base pour une expérience optimale.";
+
 export const services = [
     {
         title: "Stands personnalisables",

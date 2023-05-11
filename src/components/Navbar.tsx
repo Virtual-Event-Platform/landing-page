@@ -12,6 +12,7 @@ const sections = [
     { name: "A propos", link: "apropos" },
     { name: "Services", link: "services" },
     { name: "Offres", link: "pricing" },
+    { name: "Evènements", link: "events" },
     { name: "Equipe", link: "team" },
 ];
 

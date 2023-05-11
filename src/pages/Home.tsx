@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 import { ScrollToTop } from '../components/Scrolls';
 import colors from "../colors/colors"
 import Typed from "react-typed";
-import { typedText, teamText, aboutText, serviceText, services, teams, pricingText, cardPrincing } from '../mocks/mock';
+import { typedText, teamText, aboutText, serviceText, services, teams, pricingText, cardPrincing, eventText } from '../mocks/mock';
 import BackdropFilter from "react-backdrop-filter";
 import hero from "../assets/images/hero.jpg";
 import about from "../assets/images/about.jpg";
@@ -32,7 +32,7 @@ const Home = (props: any) => {
 						<Container maxWidth={"lg"}>
 							<Stack width={"100%"} justifyContent={"center"} alignItems={"center"} height={"100vh"}>
 								<Stack direction="column" justifyContent={"center"} alignItems={"center"}>
-									<Typography className={"text-bold"} component={"div"} sx={{ letterSpacing: 10, fontSize: { md: "14rem", sm: "8rem", xs: "4.5rem" }, textAlign: "center", lineHeight: 1 }}>
+									<Typography className={"text-bold"} component={"div"} sx={{ letterSpacing: 0, fontSize: { md: "14rem", sm: "8rem", xs: "4.5rem" }, textAlign: "center", lineHeight: 1 }}>
 										<div className={"text-fg"}>Zavoka</div>
 									</Typography>
 									<Typed
@@ -60,9 +60,9 @@ const Home = (props: any) => {
 					</Stack>
 				</BackdropFilter>
 			</Container>
-			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "5% 0% 6% 0%", }}>
+			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "6.5% 0% 0% 0%", }}>
 				<Container maxWidth={"lg"}>
-					<Grid container mt={2.5} alignItems={"center"} py={{ xs: 4, md: 0 }} bgcolor={colors.beigeSecondary}>
+					<Grid container alignItems={"center"} py={{ xs: 4, md: 0 }} bgcolor={colors.beigeSecondary}>
 						<Grid item md={5} xs={12}>
 							<Stack direction="row" width={"100%"} justifyContent={{ xs: "center", md: "start" }}>
 								<Box component="img" src={about} alt="Hero" sx={{ width: "90%", maxWidth: { xs: 350, md: "85%" } }} />
@@ -98,7 +98,7 @@ const Home = (props: any) => {
 				</Container>
 			</section>
 			<section id="services" style={{ backgroundColor: colors.dark, display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
-				<Container maxWidth={"xl"} sx={{ padding: "5% 0% 6% 0%" }}>
+				<Container maxWidth={"xl"} sx={{ padding: "4% 0% 5% 0%" }}>
 					<Typography className={"text-bold text-white"} variant='h2' sx={{ textAlign: "center", lineHeight: 1, letterSpacing: 1.2 }}>
 						Qu'offrons-nous ?
 					</Typography>
@@ -137,7 +137,7 @@ const Home = (props: any) => {
 			<section id="pricing" style={{ display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
 				<Container maxWidth={"lg"}>
 					<Typography className={"text-bold text-dark"} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, lineHeight: 1, letterSpacing: 1.2 }}>
-						Découvrez nos offres
+						Découvrez nos tarifs
 					</Typography>
 					<Typography className={"text-dark"} my={{ xs: 3, md: 2 }} sx={{ width: { md: "50%", xs: "100%" }, textAlign: { xs: "center", md: "left" }, fontSize: 17, lineHeight: 1.5 }}>
 						{pricingText}
@@ -192,6 +192,18 @@ const Home = (props: any) => {
 							</Grid>
 						))}
 					</Grid>
+				</Container>
+			</section>
+			<section id="events" style={{ backgroundColor: colors.beigeSecondary, display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
+				<Container maxWidth={"xl"} sx={{ padding: "4% 0% 5% 0%" }}>
+					<Stack alignItems={"center"}>
+						<Typography className={"text-bold text-dark"} variant='h2' sx={{ textAlign: "center", lineHeight: 1, letterSpacing: 1.2 }}>
+							Evènements à venir
+						</Typography>
+						<Typography className={"text-dark"} my={{ xs: 3, md: 2 }} sx={{ width: { md: "50%", xs: "100%" }, textAlign: "center", fontSize: 17, lineHeight: 1.5 }}>
+							{eventText}
+						</Typography>
+					</Stack>
 				</Container>
 			</section>
 			<section id="team" style={{ display: "flex", justifyContent: "center", margin: "7% 0% 7% 0%", }}>
