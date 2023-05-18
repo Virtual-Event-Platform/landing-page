@@ -12,8 +12,9 @@ import Typed from "react-typed";
 import { typedText, teamText, aboutText, serviceText, services, teams, pricingText, cardPrincing, eventText } from '../mocks/mock';
 import BackdropFilter from "react-backdrop-filter";
 import hero from "../assets/images/hero.jpg";
-import about from "../assets/images/about.jpg";
+import zavoka from "../assets/images/zavoka.gif";
 import Footer from '../components/Footer';
+import EventTimeline from '../components/Timeline';
 
 
 const Home = (props: any) => {
@@ -63,13 +64,13 @@ const Home = (props: any) => {
 			<section id="apropos" style={{ display: "flex", justifyContent: "center", margin: "6.5% 0% 0% 0%", }}>
 				<Container maxWidth={"lg"}>
 					<Grid container alignItems={"center"} py={{ xs: 4, md: 0 }} bgcolor={colors.beigeSecondary}>
-						<Grid item md={5} xs={12}>
+						<Grid item md={7} xs={12}>
 							<Stack direction="row" width={"100%"} justifyContent={{ xs: "center", md: "start" }}>
-								<Box component="img" src={about} alt="Hero" sx={{ width: "90%", maxWidth: { xs: 350, md: "85%" } }} />
+								<Box component="img" src={zavoka} alt="Hero" sx={{ width: "100%", maxWidth: { xs: 350, md: "100%" } }} />
 							</Stack>
 						</Grid>
-						<Grid item md={7} xs={12}>
-							<Stack spacing={3} px={2}>
+						<Grid item md={5} xs={12}>
+							<Stack spacing={3} px={3.5}>
 								<Typography className={"text-dark"} mt={{ xs: 3, md: "unset" }} variant='h4' sx={{ textAlign: { xs: "center", md: "left" }, letterSpacing: 1 }}>
 									Connaitre la plateforme
 								</Typography>
@@ -203,6 +204,7 @@ const Home = (props: any) => {
 						<Typography className={"text-dark"} my={{ xs: 3, md: 2 }} sx={{ width: { md: "50%", xs: "100%" }, textAlign: "center", fontSize: 17, lineHeight: 1.5 }}>
 							{eventText}
 						</Typography>
+						<EventTimeline/>
 					</Stack>
 				</Container>
 			</section>
