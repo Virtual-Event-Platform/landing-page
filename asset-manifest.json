@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/landing-page/static/css/main.376aa4be.css",
-    "main.js": "/landing-page/static/js/main.5db555d7.js",
+    "main.js": "/landing-page/static/js/main.af61703b.js",
     "static/js/787.0ae8c443.chunk.js": "/landing-page/static/js/787.0ae8c443.chunk.js",
     "static/media/back.gif": "/landing-page/static/media/back.0a85e1ff45f616467f70.gif",
+    "static/media/zavoka.gif": "/landing-page/static/media/zavoka.44c1681341bdd8f96b64.gif",
     "static/media/hero.jpg": "/landing-page/static/media/hero.f4a92d99aabd96f8d707.jpg",
     "static/media/about.jpg": "/landing-page/static/media/about.cc841767e9dcc542a119.jpg",
     "static/media/gaetan.jpg": "/landing-page/static/media/gaetan.0189b985e28479f2072c.jpg",
@@ -14,11 +15,11 @@
     "static/media/landry.jpg": "/landing-page/static/media/landry.2b48d15a91b033496e2d.jpg",
     "index.html": "/landing-page/index.html",
     "main.376aa4be.css.map": "/landing-page/static/css/main.376aa4be.css.map",
-    "main.5db555d7.js.map": "/landing-page/static/js/main.5db555d7.js.map",
+    "main.af61703b.js.map": "/landing-page/static/js/main.af61703b.js.map",
     "787.0ae8c443.chunk.js.map": "/landing-page/static/js/787.0ae8c443.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.376aa4be.css",
-    "static/js/main.5db555d7.js"
+    "static/js/main.af61703b.js"
   ]
 }
