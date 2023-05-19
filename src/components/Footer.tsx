@@ -1,12 +1,12 @@
-import { Container, Stack, Grid, Typography, Fab, Divider } from '@mui/material';
+import { Container, Stack, Grid, Typography, Fab, Divider, Box } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import LayersTwoToneIcon from '@mui/icons-material/LayersTwoTone';
 import hero from "../assets/images/hero.jpg";
 import LinkIcon from '@mui/icons-material/Link';
 import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import CallIcon from '@mui/icons-material/Call';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import zavoka from "../assets/images/zavoka.svg";
 
 
 const Footer = () => {
@@ -24,7 +24,7 @@ const Footer = () => {
                     <Grid item xs={12} md={4} justifyContent="start">
                         <Stack alignItems="center">
                             <Stack direction={"row"} alignItems={"center"} mb={1.5}>
-                                <LayersTwoToneIcon sx={{ display: "flex", mr: 1, color: "white" }} />
+                                <Box component="img" src={zavoka} sx={{ mr: 1 }} alt="Hero" width={30} />
                                 <Typography variant="h6" noWrap component="a" href="/"
                                     sx={{ mr: 2, display: "flex", fontWeight: 700, letterSpacing: '.1rem', color: 'white', textDecoration: 'none' }}
                                 >

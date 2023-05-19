@@ -3,9 +3,9 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Box, Button, Toolbar, AppBar, Container, Typography, IconButton } from '@mui/material';
 import MenuItem from '@mui/material/MenuItem';
-import LayersTwoToneIcon from '@mui/icons-material/LayersTwoTone';
 import { Link } from 'react-scroll';
 import { ElevationScroll } from "./Scrolls";
+import zavoka from "../assets/images/zavoka.svg";
 
 
 const sections = [
@@ -35,7 +35,7 @@ const Navbar = (props: any) => {
                     <Toolbar disableGutters>
 
                         {/* Items for desktop */}
-                        <LayersTwoToneIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                        <Box component="img" src={zavoka} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} alt="Hero" width={30} />
                         <Typography
                             variant="h5"
                             noWrap
@@ -50,7 +50,7 @@ const Navbar = (props: any) => {
                                 textDecoration: 'none',
                             }}
                         >
-                            zavoka
+                            Zavoka
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center" }} >
                             {sections.map((page) => (
@@ -74,7 +74,7 @@ const Navbar = (props: any) => {
                         </Box>
 
                         {/* Items for mobile */}
-                        <LayersTwoToneIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                        <Box component="img" sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} src={zavoka} alt="Hero" width={30} />
                         <Typography
                             variant="h6"
                             noWrap
