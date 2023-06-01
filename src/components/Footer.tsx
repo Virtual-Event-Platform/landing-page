@@ -79,7 +79,7 @@ const Footer = () => {
                             <Stack direction={"row"} alignItems={"center"}>
                                 <CallIcon sx={{ display: "flex", mr: 1, color: "white" }} />
                                 <Typography className={"text-white"} variant='body1' sx={{ lineHeight: 1.8 }}>
-                                    032 69 129 54
+                                    038 37 756 14
                                 </Typography>
                             </Stack>
                         </Stack>
