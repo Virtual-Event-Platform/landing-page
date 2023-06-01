@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/landing-page/static/css/main.376aa4be.css",
+    "main.css": "/landing-page/static/css/main.6d84f5f2.css",
     "main.js": "/landing-page/static/js/main.f3652378.js",
     "static/js/787.0ae8c443.chunk.js": "/landing-page/static/js/787.0ae8c443.chunk.js",
-    "static/media/back.gif": "/landing-page/static/media/back.0a85e1ff45f616467f70.gif",
     "static/media/zavoka.gif": "/landing-page/static/media/zavoka.44c1681341bdd8f96b64.gif",
+    "static/media/back.gif": "/landing-page/static/media/back.cc035c22f12e05768941.gif",
     "static/media/hero.jpg": "/landing-page/static/media/hero.f4a92d99aabd96f8d707.jpg",
     "static/media/care.jpg": "/landing-page/static/media/care.dc90f4864a57b7414fc3.jpg",
     "static/media/siae.jpg": "/landing-page/static/media/siae.b48f38122c81be1c0cb2.jpg",
@@ -17,12 +17,12 @@
     "static/media/landry.jpg": "/landing-page/static/media/landry.2b48d15a91b033496e2d.jpg",
     "static/media/zavoka.svg": "/landing-page/static/media/zavoka.2e492e54ee6210cb8e70159d6d16f5c5.svg",
     "index.html": "/landing-page/index.html",
-    "main.376aa4be.css.map": "/landing-page/static/css/main.376aa4be.css.map",
+    "main.6d84f5f2.css.map": "/landing-page/static/css/main.6d84f5f2.css.map",
     "main.f3652378.js.map": "/landing-page/static/js/main.f3652378.js.map",
     "787.0ae8c443.chunk.js.map": "/landing-page/static/js/787.0ae8c443.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.376aa4be.css",
+    "static/css/main.6d84f5f2.css",
     "static/js/main.f3652378.js"
   ]
 }
