@@ -52,7 +52,7 @@ const Footer = () => {
                                         <LinkedInIcon />
                                     </Fab>
                                 </Stack>
-                                <Stack px={1} className="social-icon" onClick={() => { window.open("https://www.facebook.com/profile.php?id=100083660835154", '_blank') }} >
+                                <Stack px={1} className="social-icon" onClick={() => { window.open("https://web.facebook.com/zavoka.plateform", '_blank') }} >
                                     <Fab size="small" sx={{ backgroundColor: "#1778F2", color: "white" }} className="sc-facebook">
                                         <FacebookIcon />
                                     </Fab>
@@ -73,13 +73,13 @@ const Footer = () => {
                             <Stack direction={"row"} alignItems={"center"}>
                                 <MailOutlineIcon sx={{ display: "flex", mr: 1, color: "white" }} />
                                 <Typography className={"text-white"} variant='body1' sx={{ lineHeight: 1.8 }}>
-                                    zavoka@gmail.com
+                                    contact@zavoka.mg
                                 </Typography>
                             </Stack>
                             <Stack direction={"row"} alignItems={"center"}>
                                 <CallIcon sx={{ display: "flex", mr: 1, color: "white" }} />
                                 <Typography className={"text-white"} variant='body1' sx={{ lineHeight: 1.8 }}>
-                                    038 37 756 14
+                                    +261 38 37 756 14
                                 </Typography>
                             </Stack>
                         </Stack>
